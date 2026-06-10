@@ -1,0 +1,446 @@
+  0
+SECTION
+  2
+HEADER
+  9
+$ACADVER
+  1
+AC1015
+  9
+$INSUNITS
+ 70
+6
+  0
+ENDSEC
+  0
+SECTION
+  2
+TABLES
+  0
+TABLE
+  2
+LAYER
+ 70
+5
+  0
+LAYER
+  2
+P0_HABITABLE
+ 70
+0
+ 62
+1
+  6
+Continuous
+  0
+LAYER
+  2
+P1_HABITABLE
+ 70
+0
+ 62
+2
+  6
+Continuous
+  0
+LAYER
+  2
+P1_TERRAZA
+ 70
+0
+ 62
+3
+  6
+Continuous
+  0
+LAYER
+  2
+P2_TECNICO
+ 70
+0
+ 62
+4
+  6
+Continuous
+  0
+LAYER
+  2
+CUBIERTA
+ 70
+0
+ 62
+5
+  6
+Continuous
+  0
+ENDTABLE
+  0
+ENDSEC
+  0
+SECTION
+  2
+ENTITIES
+  0
+LWPOLYLINE
+  5
+10
+100
+AcDbEntity
+  8
+P0_HABITABLE
+100
+AcDbPolyline
+ 90
+4
+ 70
+1
+ 43
+0.0
+ 10
+0.0
+ 20
+0.0
+ 10
+10.0
+ 20
+0.0
+ 10
+10.0
+ 20
+11.5
+ 10
+0.0
+ 20
+11.5
+  0
+TEXT
+  5
+11
+100
+AcDbEntity
+  8
+P0_HABITABLE
+100
+AcDbText
+ 10
+5.0
+ 20
+5.75
+ 30
+0.0
+ 40
+0.8
+  1
+PLANTA BAJA (P0)
+  0
+TEXT
+  5
+12
+100
+AcDbEntity
+  8
+P0_HABITABLE
+100
+AcDbText
+ 10
+5.0
+ 20
+4.5
+ 30
+0.0
+ 40
+0.6
+  1
+115.00 m2
+  0
+LWPOLYLINE
+  5
+20
+100
+AcDbEntity
+  8
+P1_HABITABLE
+100
+AcDbPolyline
+ 90
+4
+ 70
+1
+ 43
+0.0
+ 10
+15.0
+ 20
+0.0
+ 10
+25.0
+ 20
+0.0
+ 10
+25.0
+ 20
+11.0
+ 10
+15.0
+ 20
+11.0
+  0
+TEXT
+  5
+21
+100
+AcDbEntity
+  8
+P1_HABITABLE
+100
+AcDbText
+ 10
+20.0
+ 20
+5.5
+ 30
+0.0
+ 40
+0.8
+  1
+PRIMERA PLANTA (P1)
+  0
+TEXT
+  5
+22
+100
+AcDbEntity
+  8
+P1_HABITABLE
+100
+AcDbText
+ 10
+20.0
+ 20
+4.2
+ 30
+0.0
+ 40
+0.6
+  1
+110.00 m2
+  0
+LWPOLYLINE
+  5
+30
+100
+AcDbEntity
+  8
+P1_TERRAZA
+100
+AcDbPolyline
+ 90
+4
+ 70
+1
+ 43
+0.0
+ 10
+25.0
+ 20
+0.0
+ 10
+31.0
+ 20
+0.0
+ 10
+31.0
+ 20
+5.0
+ 10
+25.0
+ 20
+5.0
+  0
+TEXT
+  5
+31
+100
+AcDbEntity
+  8
+P1_TERRAZA
+100
+AcDbText
+ 10
+28.0
+ 20
+2.5
+ 30
+0.0
+ 40
+0.6
+  1
+TERRAZA 30.00 m2
+  0
+LWPOLYLINE
+  5
+40
+100
+AcDbEntity
+  8
+P2_TECNICO
+100
+AcDbPolyline
+ 90
+4
+ 70
+1
+ 43
+0.0
+ 10
+0.0
+ 20
+15.0
+ 10
+5.0
+ 20
+15.0
+ 10
+5.0
+ 20
+18.0
+ 10
+0.0
+ 20
+18.0
+  0
+TEXT
+  5
+41
+100
+AcDbEntity
+  8
+P2_TECNICO
+100
+AcDbText
+ 10
+2.5
+ 20
+16.5
+ 30
+0.0
+ 40
+0.5
+  1
+P2 TECNICO 15.00 m2
+  0
+LWPOLYLINE
+  5
+50
+100
+AcDbEntity
+  8
+CUBIERTA
+100
+AcDbPolyline
+ 90
+4
+ 70
+1
+ 43
+0.0
+ 10
+0.0
+ 20
+20.0
+ 10
+15.0
+ 20
+20.0
+ 10
+15.0
+ 20
+30.0
+ 10
+0.0
+ 20
+30.0
+  0
+TEXT
+  5
+51
+100
+AcDbEntity
+  8
+CUBIERTA
+100
+AcDbText
+ 10
+7.5
+ 20
+25.0
+ 30
+0.0
+ 40
+0.8
+  1
+CUBIERTA
+  0
+TEXT
+  5
+52
+100
+AcDbEntity
+  8
+CUBIERTA
+100
+AcDbText
+ 10
+7.5
+ 20
+23.5
+ 30
+0.0
+ 40
+0.6
+  1
+150.00 m2
+  0
+TEXT
+  5
+60
+100
+AcDbEntity
+  8
+0
+100
+AcDbText
+ 10
+0.0
+ 20
+-3.0
+ 30
+0.0
+ 40
+0.7
+  1
+VIVIENDA UNIFAMILIAR - GARCIA FAMILY - SITGES 042
+  0
+TEXT
+  5
+61
+100
+AcDbEntity
+  8
+0
+100
+AcDbText
+ 10
+0.0
+ 20
+-4.5
+ 30
+0.0
+ 40
+0.6
+  1
+Longitud canalone + bajante: 38 m
+  0
+ENDSEC
+  0
+EOF
