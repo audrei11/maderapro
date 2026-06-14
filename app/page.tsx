@@ -39,14 +39,14 @@ export default function LandingPage() {
           {/* badge */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-8 rounded-full border border-amber-500/25 bg-amber-500/[0.07] text-amber-300 text-xs font-medium">
             <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse" />
-            Wooden House Quoting · Saves 95% of preparation time
+            Wooden House Quoting · AI-Powered Quoting Assistant
           </div>
 
           <h1 className="text-[3.5rem] sm:text-[5rem] font-extrabold leading-[1.05] tracking-[-0.03em] mb-6">
             <span className="block text-white/90">Your clients wait</span>
             <span className="block text-white/90">3–5 days for a quote.</span>
             <span className="block mt-2 text-transparent bg-clip-text bg-gradient-to-br from-amber-300 via-amber-400 to-amber-600">
-              Make it 15 minutes.
+              Make it Hours.
             </span>
           </h1>
 
