@@ -2,191 +2,204 @@ import Link from 'next/link'
 
 export default function LandingPage() {
   return (
-    <main className="min-h-screen bg-[#080808] text-white overflow-x-hidden">
-      {/* nav */}
-      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-5 border-b border-white/5 bg-[#080808]/80 backdrop-blur-md">
-        <div className="flex items-center gap-2.5">
-          <span className="text-amber-400 text-xl">🪵</span>
-          <span className="font-semibold text-white tracking-tight">MaderaPro</span>
-          <span className="text-xs text-white/30 font-normal ml-1">AI Quoting</span>
+    <main className="min-h-screen bg-[#060606] text-white overflow-x-hidden">
+
+      {/* ── NAV ── */}
+      <nav className="fixed top-0 inset-x-0 z-50 flex items-center justify-between px-8 py-4 bg-[#060606]/70 backdrop-blur-xl border-b border-white/[0.06]">
+        <div className="flex items-center gap-2">
+          <span className="text-amber-400 text-lg">🪵</span>
+          <span className="font-bold tracking-tight text-white">MaderaPro</span>
+          <span className="ml-1 px-1.5 py-0.5 rounded text-[10px] font-medium bg-amber-500/10 text-amber-400 border border-amber-500/20">AI</span>
         </div>
         <Link
           href="/app"
-          className="px-4 py-2 rounded-lg text-sm font-medium bg-amber-500/10 text-amber-400 border border-amber-500/20 hover:bg-amber-500/20 transition-all"
+          className="group flex items-center gap-1.5 px-5 py-2 rounded-lg font-semibold text-sm text-black bg-amber-400 hover:bg-amber-300 transition-all shadow-[0_0_20px_rgba(251,191,36,0.25)]"
         >
-          Try Demo →
+          Try Demo
+          <span className="transition-transform group-hover:translate-x-0.5">→</span>
         </Link>
       </nav>
 
-      {/* hero */}
-      <section className="relative flex flex-col items-center justify-center text-center px-6 pt-40 pb-32">
-        {/* glow */}
-        <div className="absolute top-32 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-amber-500/10 blur-[120px] pointer-events-none" />
+      {/* ── HERO ── */}
+      <section className="relative min-h-screen flex flex-col items-center justify-center px-6 text-center pt-20">
 
-        <div className="relative z-10 max-w-3xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-amber-500/20 bg-amber-500/5 text-amber-400 text-xs font-medium mb-8">
+        {/* background glow */}
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] pointer-events-none">
+          <div className="absolute inset-0 bg-amber-500/[0.07] blur-[120px] rounded-full" />
+          <div className="absolute inset-[20%] bg-amber-400/[0.05] blur-[80px] rounded-full" />
+        </div>
+
+        {/* dot grid */}
+        <div
+          className="absolute inset-0 pointer-events-none opacity-30"
+          style={{ backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.12) 1px, transparent 1px)', backgroundSize: '28px 28px' }}
+        />
+
+        <div className="relative z-10 max-w-4xl mx-auto">
+          {/* badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-8 rounded-full border border-amber-500/25 bg-amber-500/[0.07] text-amber-300 text-xs font-medium">
             <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse" />
-            Built for MaderaPro SL · Barcelona
+            Wooden House Quoting · Saves 95% of preparation time
           </div>
 
-          <h1 className="text-5xl sm:text-6xl font-bold leading-tight tracking-tight mb-6">
-            From 3–5 Days to{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600">
-              Under 15 Minutes.
+          <h1 className="text-[3.5rem] sm:text-[5rem] font-extrabold leading-[1.05] tracking-[-0.03em] mb-6">
+            <span className="block text-white/90">Your clients wait</span>
+            <span className="block text-white/90">3–5 days for a quote.</span>
+            <span className="block mt-2 text-transparent bg-clip-text bg-gradient-to-br from-amber-300 via-amber-400 to-amber-600">
+              Make it 15 minutes.
             </span>
           </h1>
 
-          <p className="text-lg text-white/50 max-w-xl mx-auto mb-10 leading-relaxed">
-            Upload your floor plans, emails, and project notes. The AI reads everything,
-            computes the full quote, and exports a client-ready document — automatically.
+          <p className="text-white/45 text-lg max-w-lg mx-auto mb-10 leading-relaxed">
+            Upload AutoCAD floor plans, client emails, and site notes.
+            AI extracts every dimension, builds the full price breakdown, and exports
+            a ready-to-send quote — with zero manual data entry.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/app"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-black bg-gradient-to-r from-amber-400 to-amber-500 shadow-[0_0_30px_rgba(245,158,11,0.3)] hover:shadow-[0_0_45px_rgba(245,158,11,0.45)] hover:scale-[1.02] transition-all duration-200"
+              className="group inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-black text-base bg-gradient-to-br from-amber-300 to-amber-500 shadow-[0_0_50px_rgba(245,158,11,0.35)] hover:shadow-[0_0_70px_rgba(245,158,11,0.5)] hover:scale-[1.02] transition-all duration-200"
             >
               Try the Free Demo
-              <span className="text-base">→</span>
+              <span className="transition-transform group-hover:translate-x-1">→</span>
             </Link>
-            <span className="text-white/25 text-sm">No account needed · No API key</span>
+            <p className="text-white/25 text-sm">No signup · No API key required</p>
           </div>
         </div>
-      </section>
 
-      {/* stats */}
-      <section className="border-y border-white/5 bg-white/[0.02]">
-        <div className="max-w-4xl mx-auto grid grid-cols-3 divide-x divide-white/5">
-          {[
-            { value: '95%', label: 'Less time per quote' },
-            { value: '18', label: 'Pricing line items auto-calculated' },
-            { value: '3', label: 'File types supported (DWG, PDF, Email)' },
-          ].map(({ value, label }) => (
-            <div key={label} className="flex flex-col items-center py-10 px-6 text-center">
-              <span className="text-4xl font-bold text-amber-400 mb-2">{value}</span>
-              <span className="text-sm text-white/40 leading-snug">{label}</span>
-            </div>
-          ))}
+        {/* scroll hint */}
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-20">
+          <div className="w-px h-10 bg-gradient-to-b from-transparent to-white" />
         </div>
       </section>
 
-      {/* how it works */}
-      <section className="max-w-4xl mx-auto px-6 py-24">
-        <div className="text-center mb-16">
-          <h2 className="text-2xl font-bold mb-3">How It Works</h2>
-          <p className="text-white/40 text-sm">Three steps from files to finished quote</p>
-        </div>
-
-        <div className="grid sm:grid-cols-3 gap-6">
-          {[
-            {
-              step: '01',
-              title: 'Upload Your Files',
-              desc: 'Drop in the AutoCAD floor plan (.DWG/.DXF), client email, and any project notes. All in one go.',
-              icon: '📂',
-            },
-            {
-              step: '02',
-              title: 'AI Reads Everything',
-              desc: 'Claude extracts dimensions, window counts, materials, and special requirements — in Spanish, Catalan, or English.',
-              icon: '🧠',
-            },
-            {
-              step: '03',
-              title: 'Download the Quote',
-              desc: 'Get a complete XLSX breakdown and DOCX offer letter, matching your company template exactly.',
-              icon: '📄',
-            },
-          ].map(({ step, title, desc, icon }) => (
-            <div
-              key={step}
-              className="relative p-6 rounded-2xl border border-white/8 bg-white/[0.02] hover:border-amber-500/20 hover:bg-amber-500/[0.03] transition-all"
-            >
-              <div className="flex items-center gap-3 mb-4">
-                <span className="text-2xl">{icon}</span>
-                <span className="text-xs font-mono text-amber-500/60">{step}</span>
+      {/* ── BEFORE / AFTER ── */}
+      <section className="border-y border-white/[0.06] bg-white/[0.015]">
+        <div className="max-w-4xl mx-auto px-6 py-16 grid sm:grid-cols-2 gap-px">
+          <div className="bg-white/[0.02] p-10 sm:rounded-l-2xl">
+            <p className="text-xs font-semibold uppercase tracking-widest text-white/20 mb-6">Before</p>
+            {['Open AutoCAD, measure each room manually', 'Transfer numbers to Excel by hand', 'Calculate walls, windows, roof separately', 'Write the offer letter in Word', 'Send it 3–5 days later'].map(item => (
+              <div key={item} className="flex items-start gap-3 mb-3">
+                <span className="mt-0.5 text-red-500/60 shrink-0">✕</span>
+                <span className="text-sm text-white/35 leading-snug">{item}</span>
               </div>
-              <h3 className="font-semibold text-white mb-2">{title}</h3>
-              <p className="text-sm text-white/40 leading-relaxed">{desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* features */}
-      <section className="border-t border-white/5 bg-white/[0.02]">
-        <div className="max-w-4xl mx-auto px-6 py-24">
-          <div className="text-center mb-16">
-            <h2 className="text-2xl font-bold mb-3">Built for Precision</h2>
-            <p className="text-white/40 text-sm">Every feature exists to reduce errors and save time</p>
+            ))}
           </div>
-
-          <div className="grid sm:grid-cols-2 gap-4">
-            {[
-              {
-                icon: '📐',
-                title: 'Exact DWG/DXF Geometry',
-                desc: 'Uses Shoelace formula on actual polygon coordinates — not OCR estimates. Area and perimeter are mathematically exact.',
-              },
-              {
-                icon: '🌍',
-                title: 'Multilingual Extraction',
-                desc: 'Reads project documents in Spanish, Catalan, and English. No manual translation needed.',
-              },
-              {
-                icon: '⚠️',
-                title: 'Confidence Scoring',
-                desc: 'Fields the AI is unsure about are flagged for your review — so you always know what to double-check.',
-              },
-              {
-                icon: '📊',
-                title: 'Full Excel Replication',
-                desc: '18-line pricing engine with margins, VAT, and assembly days — identical to your existing Excel template.',
-              },
-            ].map(({ icon, title, desc }) => (
-              <div
-                key={title}
-                className="flex gap-4 p-5 rounded-xl border border-white/8 bg-transparent hover:border-amber-500/15 transition-all"
-              >
-                <span className="text-2xl mt-0.5 shrink-0">{icon}</span>
-                <div>
-                  <h4 className="font-medium text-white mb-1">{title}</h4>
-                  <p className="text-sm text-white/40 leading-relaxed">{desc}</p>
-                </div>
+          <div className="bg-amber-500/[0.04] p-10 sm:rounded-r-2xl border-l border-amber-500/10">
+            <p className="text-xs font-semibold uppercase tracking-widest text-amber-400/60 mb-6">After MaderaPro AI</p>
+            {['Drop the DWG file — areas extracted automatically', 'Email and notes read in any language', 'Full 18-line pricing computed in seconds', 'DOCX offer letter generated instantly', 'Quote delivered the same day'].map(item => (
+              <div key={item} className="flex items-start gap-3 mb-3">
+                <span className="mt-0.5 text-amber-400 shrink-0">✓</span>
+                <span className="text-sm text-white/70 leading-snug">{item}</span>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* cta */}
-      <section className="relative py-28 px-6 text-center overflow-hidden">
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="w-[500px] h-[300px] bg-amber-500/8 blur-[100px] rounded-full" />
+      {/* ── STATS ── */}
+      <section className="max-w-4xl mx-auto px-6 py-20">
+        <div className="grid grid-cols-3 gap-6 text-center">
+          {[
+            { n: '95%', sub: 'Less time per quote' },
+            { n: '<15m', sub: 'From files to finished quote' },
+            { n: '3 → 1', sub: 'Files become one output' },
+          ].map(({ n, sub }) => (
+            <div key={n} className="p-6 rounded-2xl border border-white/[0.07] bg-white/[0.02]">
+              <div className="text-3xl sm:text-4xl font-bold text-amber-400 mb-1">{n}</div>
+              <div className="text-xs text-white/35">{sub}</div>
+            </div>
+          ))}
         </div>
-        <div className="relative z-10 max-w-xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4">
-            Ready to cut quote time by{' '}
-            <span className="text-amber-400">95%?</span>
+      </section>
+
+      {/* ── HOW IT WORKS ── */}
+      <section className="border-t border-white/[0.06] bg-white/[0.015]">
+        <div className="max-w-4xl mx-auto px-6 py-24">
+          <div className="mb-14">
+            <p className="text-xs font-semibold uppercase tracking-widest text-amber-400/50 mb-3">Process</p>
+            <h2 className="text-3xl font-bold">Three steps. That&apos;s it.</h2>
+          </div>
+
+          <div className="grid sm:grid-cols-3 gap-6">
+            {[
+              { n: '1', icon: '📂', title: 'Upload your project files', desc: 'DWG/DXF floor plan, client email, and handwritten notes — all at once.' },
+              { n: '2', icon: '🧠', title: 'AI reads and computes', desc: 'Extracts exact areas, perimeters, window counts, and special requirements from every file.' },
+              { n: '3', icon: '📄', title: 'Download the full quote', desc: 'XLSX pricing sheet + DOCX offer letter — formatted exactly like your company template.' },
+            ].map(({ n, icon, title, desc }) => (
+              <div key={n} className="relative p-7 rounded-2xl border border-white/[0.08] bg-white/[0.02] hover:border-amber-500/20 hover:bg-amber-500/[0.03] transition-all group">
+                <div className="absolute -top-3 -left-3 w-7 h-7 rounded-full bg-amber-400 text-black text-xs font-bold flex items-center justify-center shadow-[0_0_15px_rgba(251,191,36,0.4)]">
+                  {n}
+                </div>
+                <span className="text-3xl block mb-5">{icon}</span>
+                <h3 className="font-semibold text-white mb-2 text-sm">{title}</h3>
+                <p className="text-sm text-white/40 leading-relaxed">{desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── FEATURES ── */}
+      <section className="max-w-4xl mx-auto px-6 py-24">
+        <div className="mb-14">
+          <p className="text-xs font-semibold uppercase tracking-widest text-amber-400/50 mb-3">Capabilities</p>
+          <h2 className="text-3xl font-bold">Built for accuracy, not guesswork.</h2>
+        </div>
+
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { icon: '📐', title: 'Mathematically exact geometry', desc: 'Shoelace formula on raw DWG polygon coordinates. Not OCR, not estimates — the real numbers from the CAD file.' },
+            { icon: '🌍', title: 'Spanish · Catalan · English', desc: 'Extracts project details from documents in any language. No translation step. No lost nuance.' },
+            { icon: '⚠️', title: 'Flags what it isn\'t sure about', desc: 'Every extracted field has a confidence score. LOW confidence fields are shown for human review — nothing slips through.' },
+            { icon: '📊', title: 'Replicates your Excel exactly', desc: '18-line pricing breakdown matching the MaderaPro template: margins, VAT at 21%, assembly days, wall surfaces.' },
+          ].map(({ icon, title, desc }) => (
+            <div key={title} className="flex gap-5 p-6 rounded-2xl border border-white/[0.07] bg-white/[0.02] hover:border-amber-500/15 transition-all">
+              <span className="text-2xl shrink-0 mt-0.5">{icon}</span>
+              <div>
+                <h4 className="font-semibold text-white text-sm mb-1.5">{title}</h4>
+                <p className="text-sm text-white/40 leading-relaxed">{desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── FINAL CTA ── */}
+      <section className="relative border-t border-white/[0.06] overflow-hidden">
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div className="w-[700px] h-[400px] bg-amber-500/[0.07] blur-[100px] rounded-full" />
+        </div>
+
+        <div className="relative z-10 max-w-2xl mx-auto px-6 py-32 text-center">
+          <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight mb-5 leading-tight">
+            Stop losing deals to<br />
+            <span className="text-amber-400">slow quotes.</span>
           </h2>
-          <p className="text-white/40 mb-8 text-sm">
-            No setup. No API key. Try the full demo with sample project files right now.
+          <p className="text-white/40 mb-10 leading-relaxed">
+            Try the demo with real sample files — a complete Garcia Family project,
+            ready to run through the entire pipeline.
           </p>
           <Link
             href="/app"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold text-black bg-gradient-to-r from-amber-400 to-amber-500 shadow-[0_0_40px_rgba(245,158,11,0.3)] hover:shadow-[0_0_60px_rgba(245,158,11,0.45)] hover:scale-[1.02] transition-all duration-200 text-base"
+            className="group inline-flex items-center gap-2 px-10 py-4 rounded-xl font-bold text-black text-lg bg-gradient-to-br from-amber-300 to-amber-500 shadow-[0_0_60px_rgba(245,158,11,0.4)] hover:shadow-[0_0_80px_rgba(245,158,11,0.55)] hover:scale-[1.02] transition-all duration-200"
           >
-            Start Free Demo →
+            Start Free Demo
+            <span className="transition-transform group-hover:translate-x-1">→</span>
           </Link>
         </div>
       </section>
 
-      {/* footer */}
-      <footer className="border-t border-white/5 py-8 px-6 text-center">
-        <p className="text-white/20 text-xs">
-          MaderaPro AI Quoting Assistant · Built with Next.js + Claude AI
-        </p>
+      {/* ── FOOTER ── */}
+      <footer className="border-t border-white/[0.06] py-8 px-8 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div className="flex items-center gap-2 text-white/20 text-sm">
+          <span>🪵</span>
+          <span>MaderaPro AI Quoting Assistant</span>
+        </div>
+        <p className="text-white/15 text-xs">Built with Next.js · Claude AI · AutoCAD geometry parsing</p>
       </footer>
+
     </main>
   )
 }
